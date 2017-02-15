@@ -43,7 +43,6 @@
 	3. Hiểu rõ đặc trưng của PHP với các ngôn ngữ khác
 		+ Mã nguồn mở
 	    + Chuyên dùng cho Web
-	    + Ổn định
 	    + Phổ biến: hơn 70% trang web đang dùng PHP
 	    + Cộng đồng lớn
 	    + Nhiều tài liệu

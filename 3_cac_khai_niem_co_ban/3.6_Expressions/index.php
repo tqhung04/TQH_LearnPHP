@@ -44,37 +44,37 @@
 
 	/* Toán tử với array
 	*/
-		// $a = array(1 ,2, 3);
-		// $b = array(4 ,5, 6, 7);
-		// $c = $a + $b;
-		// print_r($c);
-		// $c = $b + $a;
-		// print_r($c);
-		// $c = $a += $b;
-		// print_r($c);
-		// $c = $a - $b;
-		// print_r($c);
+		$a = array(1 ,2, 3);
+		$b = array(4 ,5, 6, 7);
+		$c = $a + $b;
+		print_r($c);
+		$c = $b + $a;
+		print_r($c);
+		$c = $a += $b;
+		print_r($c);
+		$c = $a - $b;
+		print_r($c);
 
-		echo "<br>";
-		$arr2 = array();
-		$arr2[1] = 2;
-		$arr2[0] = 1;
-		// $arr2[3] = 3;
+		// echo "<br>";
+		// $arr2 = array();
+		// $arr2[1] = 2;
+		// $arr2[0] = 1;
+		// // $arr2[3] = 3;
 
-		$arr1 = [1, 2];
-		var_dump( $arr1 == $arr2 );
-		var_dump( $arr1 === $arr2 );
+		// $arr1 = [1, 2];
+		// var_dump( $arr1 == $arr2 );
+		// var_dump( $arr1 === $arr2 );
 		
-		echo "<br>";
+		// echo "<br>";
 
-		$a = array(5=>7, 2, 3);
-		var_dump($a);
-		echo "<br>";
+		// $a = array(5=>7, 2, 3);
+		// var_dump($a);
+		// echo "<br>";
 
-		$a = [1, 5, 100];
-		$b = [2, 1, 1];
-		var_dump($a > $b);
-		var_dump($b > $a);
+		// $a = [1, 5, 100];
+		// $b = [2, 1, 1];
+		// var_dump($a > $b);
+		// var_dump($b > $a);
 
 		
  ?>

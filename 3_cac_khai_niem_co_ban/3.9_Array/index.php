@@ -6,7 +6,7 @@
 	3. Cách gộp mảng, cắt mảng và nối mảng
 	4. Biết được 1 số hàm hữu ích khác để thao tác với mảng: array_keys(), array_values(), array_flip(), array_rand()...
 
-	________________________________________________________________________________________________
+	_____________________________________________________________________________________
 	1. Hiểu được khái niệm mảng là gì? Nắm được cách khai báo 1 mảng, in dữ liệu từ mảng ra trình duyệt
 		- Mang la 1 kieu du lieu trong php cho phep lưu nhieu gia tri con ben trong
 		- Khai bao 1 mang co 4 cach:
@@ -125,7 +125,29 @@
 				// array_key_exists -> tim theo key -> true or  false
 					var_dump( array_key_exists('hero', $arr) );
 
-
+		// 4. 
+			echo "<br>";
+			$arr = array(
+				"0" => "1",
+				1	=> 2,
+				null	=> 'world',
+				'hello'	=> 5
+			);
+			// array_keys()
+			$arrKeys = array_keys($arr);
+			var_dump($arrKeys);
+			// array_values()
+			echo "<br>";
+			$arrVal = array_values($arr);
+			var_dump($arrVal);
+			// array_flip()
+			echo "<br>";
+			$arrFlip = array_flip($arr);
+			var_dump($arrFlip);
+			// array_rand()
+			echo "<br>";
+			$arrRand = array_rand($arr);
+			var_dump($arrRand);
 
 
 			

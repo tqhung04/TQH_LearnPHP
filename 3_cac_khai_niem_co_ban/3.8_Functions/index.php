@@ -38,7 +38,7 @@
 		var_dump(total(1, null, 2));
 
 		// 5. Biết được cách trả về nhiều giá trị sử dụng từ khóa list
-		$arr = array(1, 2, 3);
+		$arr = array(1, 2, 3, 4);
 		list($i, ,$i1) = $arr;
 		var_dump($i, $i1);
 		echo "<br>";

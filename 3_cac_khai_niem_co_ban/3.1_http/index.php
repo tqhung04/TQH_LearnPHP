@@ -12,7 +12,7 @@
 	2. Hiểu được cấu trúc của HTTP Request và HTTP Response và mối liên quan giữa chúng với PHP
 */
 ?>	
-	<form action="respone.php" method="get">
+	<form action="respone.php" method="post">
 		<input type="text" name="txt_username">
 		<button value="Submit">Submit</button>
 	</form>

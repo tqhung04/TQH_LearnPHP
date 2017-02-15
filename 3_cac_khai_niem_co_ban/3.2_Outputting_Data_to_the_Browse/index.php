@@ -7,6 +7,11 @@
 	______________________________________________________________________________
 
 	1. Hiểu được cách thức code PHP chạy và output kết quả cho trình duyệt
+	    1 Lexing -> chuyển mã nguồn PHP thành 1 chuỗi các token
+	    2 Parsing -> phân tích cú pháp
+	    3 Biên dịch (compilation)
+	    4 Thông dịch (intepretation)
+
 	2. Nắm được các phương pháp comment trong code PHP, ý nghĩa các thẻ đóng/mở trong code PHP
 	3. Nắm được các phướng pháp để output thông tin ra trình duyệt, sự khác nhau giữa các hàm print(), echo(), printf(), sprintf(), var_dump()
 		3.1 print() */
@@ -54,4 +59,7 @@ END;
 		var_dump($a);
 		var_dump("Hello var_dump");
 
-
+		echo "<br>";
+		var_dump(print('asd'));
+		$a = 1;
+		echo '$a';
