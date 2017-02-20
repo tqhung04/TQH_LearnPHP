@@ -91,11 +91,24 @@
 
 		*/ 
 
+		/* 4. Phân biệt được các từ khóa static, self, this
+			- self: 
+				+ truy cập đến chính class CHỨA NÓ
+				+ để gọi static function & tham chiếu đến các thuộc tính static
+				+ có thể dùng trong các hàm static
+				+ sử dụng sẽ ngăn chặn tính đa hình
+			- this: 
+				+ để tham chiếu đến đối tượng (object) HIỆN TẠI
+				+ để gọi non-static function
+				+ không nên dùng để gọi các thuộc tính static
+				+ không thể sử dụng trong hàm static
+		*/
+
 		/*	7. Biết được cách áp dụng interface, abstract class vào các bài toán cụ thể
 		- Lớp abstract: là lớp định nghĩa các phương thức mà từ đó các lớp con sẽ OVERWRITE lên nó.
-			+ phải có từ khóa abstract ở trước tên class và tên hàm
+			+ phải có từ khóa abstract ở trước tên class
 			+ có thể có thuộc tính nhưng thuộc tính không được khai báo là abstract
-			+ hàm trong lớp abstract chỉ được khai báo chứ không được định nghĩa
+			+ nếu hàm được khai báo abstract chỉ được khai báo chứ không được định nghĩa
 			+ không thể khởi tạo đối tượng mới của lớp abstract
 			+ không thể khai báo private với các hàm trong lớp abstract, 
 			+ Lớp kế thừa từ lớp Abstract phải Rewrite lại tất cả các hàm Abstract trong lớp Abstract, nếu không sẽ bị báo sai
@@ -107,6 +120,10 @@
 			abstract protected function Hello ();
 			// abstract private function Hi ();
 			abstract public function Hi ();
+
+			public function Konichiha () {
+				
+			}
 			public function Ba () {
 			}
 		}
