@@ -136,9 +136,6 @@
 			function Hi () {}	
 		}
 
-		
-
-
 		/*
 			Sự khác nhau giữa interface và class abstract 
 			- interface không phải là 1 lớp cụ thể mà là 1 khuôn mẫu để cho 1 đối tượng implement nó.

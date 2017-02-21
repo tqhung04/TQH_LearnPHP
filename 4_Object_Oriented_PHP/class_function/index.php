@@ -5,7 +5,6 @@ class User {
 	protected $_email;
 	public $name;
 
-
 	public function show () {
 		return get_class($this);
 	}
@@ -37,6 +36,7 @@ class_alias('A', 'B');
 $a = new A;
 $b = new B;
 
+echo " <br> class_alias <br>";
 var_dump( $a == $b);
 var_dump( $a === $b);
 var_dump($a instanceof $b);

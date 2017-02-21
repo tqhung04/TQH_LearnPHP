@@ -17,7 +17,9 @@ interface C extends A, B {
 
 }
 
-class D implements A, B {
+class F {}
+
+class D extends F implements A, B{
 
 }
 

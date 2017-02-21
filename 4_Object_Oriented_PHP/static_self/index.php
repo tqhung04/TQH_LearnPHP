@@ -5,9 +5,8 @@ class A {
 		echo __CLASS__;
 	}
 	function test () {
-		static::who();
-		// $this->who();
-		// self::who();
+		// static::who();		//-> B
+		self::who();		//-> A
 	}
 }
 
@@ -17,7 +16,7 @@ class B extends A {
 	}
 }
 
-// B::test();
+B::test();
 
-$b = new B;
-$b->test();
+// $b = new B;
+// $b->test();

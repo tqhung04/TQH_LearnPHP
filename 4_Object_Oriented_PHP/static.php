@@ -15,8 +15,21 @@ class A {
 	}
 }
 
-$a = new A;
-$a->show();
+// $a = new A;
+// $a->show();
 
-$b = new A;
-$b->show();
+// $b = new A;
+// $b->show();
+
+// echo "<br>";
+
+class B {
+	protected static $temp = 1;
+}
+class C extends B {
+	protected static $temp = 2;
+}
+
+echo B::$temp;
+// $b = new B;
+// echo $b->$temp;
