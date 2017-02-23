@@ -1,23 +1,16 @@
 <?php
 
 class A {
-	function who () {
-		echo __CLASS__;
-	}
-	function test () {
-		static::who();
-		// $this->who();
-		// self::who();
+	protected static $name = "A";
+	public function getName () {
+		return static::$name;
+		// return self::$name;
 	}
 }
 
 class B extends A {
-	function who () {
-		echo __CLASS__;
-	}
+	protected static $name = "B";
 }
 
-// B::test();
-
 $b = new B;
-$b->test();
+echo $b -> getName();

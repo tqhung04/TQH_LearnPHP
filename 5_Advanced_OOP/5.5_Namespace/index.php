@@ -21,12 +21,16 @@ $a = new User;
 
 echo "<br>";
 
-use UserLib;
-$b = new UserLib\User;
+// use Application\UserLib; ->Error
+use Application\UserLib as PHP;
+
+$b = new PHP\User;
+
+echo "<br>";
 
 echo "<br>";
 
 echo PI;
-echo UserLib\PI;
+echo PHP\PI;
 
 

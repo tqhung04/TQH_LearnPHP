@@ -1,6 +1,8 @@
 <?php
 
 class A {
+
+	public static $name = "ABCDEF";
 	function who () {
 		echo __CLASS__;
 	}
@@ -16,7 +18,8 @@ class B extends A {
 	}
 }
 
-B::test();
+echo A::$name;
+// B::test();
 
 // $b = new B;
 // $b->test();

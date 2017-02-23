@@ -29,7 +29,7 @@ var_dump( get_class_vars('User') );
 // -> làm tên lớp ngắn hơn
 // -> di chuyển class đến các namespaces khác
 class A {
-
+	public $temp = "Class A";
 }
 class_alias('A', 'B');
 
@@ -41,7 +41,10 @@ var_dump( $a == $b);
 var_dump( $a === $b);
 var_dump($a instanceof $b);
 var_dump($b instanceof $a);
+echo "<br>";
 
+// __________________________
+include "plus.php";
 
-
-
+use UserLib;
+$base = new UserLib\Lib1\Lib2\Base;

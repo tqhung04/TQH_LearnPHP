@@ -1,5 +1,5 @@
 <?php 
-namespace UserLib; 
+namespace Application\UserLib; 
 
 const PI = 3.14;
 // const CONSTANT = 'constant value';

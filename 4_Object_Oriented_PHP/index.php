@@ -71,7 +71,7 @@
 			}
 
 		}
-		$admin01 = new Admin();
+		$admin01 = new Admin("");
 		$admin01 -> name = "Admin";
 		$admin01 -> createUser();
 		// $admin01 -> email = "admin@gmail.com";
@@ -93,7 +93,7 @@
 
 		/* 4. Phân biệt được các từ khóa static, self, this
 			- self: 
-				+ truy cập đến chính class CHỨA NÓ
+					+ truy cập đến chính class CHỨA NÓ
 				+ để gọi static function & tham chiếu đến các thuộc tính static
 				+ có thể dùng trong các hàm static
 				+ sử dụng sẽ ngăn chặn tính đa hình
