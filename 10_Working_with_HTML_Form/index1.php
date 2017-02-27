@@ -15,12 +15,12 @@
 
 <?php
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-		$username = test_input($_POST["txtUsername"]);
-		$email = test_input($_POST["txtEmail"]);
-		$password = test_input($_POST["pasPw"]);
+		$username = validate($_POST["txtUsername"]);
+		$email = validate($_POST["txtEmail"]);
+		$password = validate($_POST["pasPw"]);
 	}
 
-	function test_input ($data) {
+	function validate ($data) {
 		$data = trim($data);			// xóa khoảng trống đầu cuối
 		$data = stripslashes($data); 	// bỏ tất cả ký tự \
 		$data = htmlspecialchars($data);// ngăn chặn định dạng html

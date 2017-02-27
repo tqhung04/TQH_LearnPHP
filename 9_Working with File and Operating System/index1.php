@@ -97,6 +97,7 @@ _________________________
 5. Xóa file:										unlink($path)
 6. Kiểm tra một đường dẫn folder có tồn tại không:	is_dir($filename)
 7. Tạo một folder mới:								mkdir($path)
+8. Trả về thư mục hiện tại đang làm việc:			getcwd();
 */
 
 // if ( file_exists("db/data.txt") ) {
@@ -114,3 +115,4 @@ _________________________
 // 	echo "Đường dẫn không tồn tại";
 // }
 
+// echo getcwd();
