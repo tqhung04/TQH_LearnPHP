@@ -22,18 +22,35 @@
 $partern = '/[A-Z]/';
 $subject = 'qưc A';
 if (preg_match($partern, $subject)){
-    echo 'Chuỗi regex so khớp';
+	echo 'Chuỗi regex so khớp';
+	echo '<br>';
 }
 
 $partern = '/[a-zA-Z0-9]/';
 $subject = '!';
 if (preg_match($partern, $subject)){
-    echo 'Chuỗi regex so khớp';
+	echo 'Chuỗi regex so khớp';
+	echo '<br>';
 }
 
 $partern = '/^[a-z]{5,10}$/';
 $subject = 'addww';
 if (preg_match($partern, $subject)){
-    echo 'Chuỗi regex so khớp';
+	echo 'Chuỗi regex so khớp';
+	echo '<br>';
 }
 
+$partern = '/[a-zA-Z]/';
+$partern1 = '/@gmail.com/';
+
+$subject = 'adminoAA';
+var_dump(preg_match($partern, $subject, $matches));
+print_r($matches);
+
+
+// Thay chuoi 'meo' -> 'neko'
+// $string = 'thehalfheart@gmail.com, freetuts@facebook.com, thehalfheart@yahoo.com';
+// preg_match_all('/(?<=thehalfheart)@[^,]+/', $string, $matches);
+// echo '<pre>';
+// print_r($matches);
+// echo '</pre>';
